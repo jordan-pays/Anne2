@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4435d04-8e1e-47a9-b091-6814d4c49b06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../AlgoAnvance/fractale/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AlgoAnvance/fractale/.idea/fractale.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AlgoAnvance/fractale/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AlgoAnvance/fractale/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AlgoAnvance/fractale/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fractale.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Fractale/com/company/DessinFractale.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Fractale/com/company/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Fractale/com/company/Turtle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/DessinFractale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Turtle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgoAnvance/fractale/DessinFractale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgoAnvance/fractale/Turtle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../td1-jordan-pays" beforeDir="false" afterPath="$PROJECT_DIR$/../td1-jordan-pays" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Model_math" beforeDir="false" afterPath="$PROJECT_DIR$/../../Model_math" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1hrxoDYNjSOuzJtIJ8XFsKms5L0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../td1-jordan-pays" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Application.DessinFractale">
+    <configuration name="DessinFractale" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.DessinFractale" />
+      <module name="Fractale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="Fractale" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.DessinFractale" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DessinFractale" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4435d04-8e1e-47a9-b091-6814d4c49b06" name="Default Changelist" comment="" />
+      <created>1600783185038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600783185038</updated>
+      <workItem from="1600783189035" duration="4377000" />
+      <workItem from="1600848837737" duration="1229000" />
+      <workItem from="1601034696906" duration="618000" />
+      <workItem from="1601214675240" duration="240000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601214866702">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601214866702" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1600788526790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600788526790" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1600788526790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600788526790" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1600788526790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600788526790" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1600788526790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600788526790" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1601214677064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1601214677064" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600783972326">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600783972326" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1600784279403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600784279403" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600783599033">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600783599033" />
+  </component>
+</project>
