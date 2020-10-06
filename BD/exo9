@@ -77,7 +77,7 @@ where codeSalarie=p_codeSalarie;
 IF v_nbEquipe<=3 THEN
 INSERT INTO EtreAffecte(codeSalarie,codeEquipe) VALUES (p_codeSalarie,p_codeEquipe);
 ELSE
-RAISE_APPLICATION_ERROR(-2001, 'Le salarié est déjà affecté à au moins 3 équipes');
+RAISE_APPLICATION_ERROR(-20001, 'Le salarié est déjà affecté à au moins 3 équipes');
 END IF;
 END; 
 /
