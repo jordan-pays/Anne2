@@ -97,4 +97,5 @@ From EtreAffecte
 WHERE codeSalarie = '81'
 AND codeEquipe='E1';
 
-
+ALTER TABLE Equipes
+ADD CONSTRAINT fk_Equipes_codeSalarieChef FOREIGN KEY (codeSalarieChef) REFERENCES EtreAffecte(codeSalarie);
