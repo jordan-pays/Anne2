@@ -172,9 +172,80 @@ From EtreAffecte
 WHERE codeSalarie = 'S7'
 AND codeEquipe ='E4';
 
-/* */
+/*	*/
 CREATE OR REPLACE VIEW Affectations(codeSalarie,nomSalarie,prenomSalarie,codeEquipe,nomEquipe)
 AS Select s.codeSalarie,s.nomSalarie,s.prenomSalarie,e.codeEquipe,e.nomEquipe
 FROM Salaries s
 JOIN EtreAffecte ea on s.codeSalarie=ea.codeSalarie
 JOIN Equipes e on ea.codeEquipe=e.codeEquipe 
+
+/*	*/
+CREATE OR REPLACE TRIGGER tr_affectations
+INSTEAD OF INSERT ON Affectations
+FOR EACH ROW
+DECLARE s_nb NUMBER; e_nb NUMBER; 
+BEGIN
+SELECT count(*) into s_nb
+From Salaries s
+where s.codeSalarie=:NEW.codeSalarie;
+
+Select count(*) into e_nb
+From Equipes e
+WHERE e.codeEquipe=:NEW.codeEquipe;
+
+IF(s_nb =0) THEN
+INSERT INTO Salaries (codeSalarie,nomSalarie,prenomSalarie,nbTotalJourneesTravail) 
+VAlues (:NEW.codeSalarie,:NEW.nomSalarie,:NEW.prenomSalarie,0);
+END IF;
+
+IF(e_nb=0) THEN
+INSERT INTO Equipes (codeEquipe,nomEquipe,codeSalarieChef)
+VAlues (:NEW.codeEquipe,:NEW.nomEquipe,NULL);
+END IF;
+
+INSERT INTO EtreAffecte(codeSalarie,codeEquipe)
+VAlues (:NEW.codeSalarie,:NEW.codeEquipe); 
+END;
+/
+show ERRORS
+INSERT INTO Affectations
+VAlues ('S9','Zétofrais','Mélanie','E5','Indigo');
+INSERT INTO Affectations
+VAlues ('S9','Zétofrais','Mélanie','E4','Mars');
+INSERT INTO Affectations
+VAlues ('S5','Umule','Jacques','E6','Europa');
+INSERT INTO Affectations
+VAlues ('S10','Zeblouse','Agathe','E7','Galileo');
+
+Select * FROM EtreAffecte
+
+/*		*/
+CREATE OR REPLACE TRIGGER tr_affectations
+INSTEAD OF INSERT ON Affectations
+FOR EACH ROW
+DECLARE s_nb NUMBER; e_nb NUMBER; 
+BEGIN
+SELECT count(*) into s_nb
+From Salaries s
+where s.codeSalarie=:NEW.codeSalarie;
+
+Select count(*) into e_nb
+From Equipes e
+WHERE e.codeEquipe=:NEW.codeEquipe;
+
+IF(s_nb =0) THEN
+IF(:OLD.nomSalarie!=:NEW.nomSalarie && :OLD.prenomSalarie!=:NEW.prenomSalarie) THEN
+AISE_APPLICATION_ERROR(-20003, 'Les données sur le salarié '. :NEW.codeSalarie .' sont fausses');
+END IF;
+INSERT INTO Salaries (codeSalarie,nomSalarie,prenomSalarie,nbTotalJourneesTravail) 
+VAlues (:NEW.codeSalarie,:NEW.nomSalarie,:NEW.prenomSalarie,0);
+END IF;
+
+IF(e_nb=0) THEN
+INSERT INTO Equipes (codeEquipe,nomEquipe,codeSalarieChef)
+VAlues (:NEW.codeEquipe,:NEW.nomEquipe,NULL);
+END IF;
+
+INSERT INTO EtreAffecte(codeSalarie,codeEquipe)
+VAlues (:NEW.codeSalarie,:NEW.codeEquipe); 
+END;
